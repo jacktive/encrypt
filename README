@@ -1,0 +1,6 @@
+I just made a encryption program for competition among my friends.
+It hashes key into SHA256 and encrypt it with AES-256.
+Of cource I'll be the winner since the competition's about breaking it. :D
+
+
+License: GPLv3
