@@ -162,11 +162,13 @@ again:
     cout << str_dialog[8] << str_dialog[select] << '!' << '\n';
     d_pause();
     cout << str_dialog[9] << str_dialog[select] << '?' << '\n' << str_dialog[0];
+    cin.sync();
     getline(cin, encrypted);
     decrypted=encrypted;
     cout << str_dialog[10] << str_dialog[select] << str_dialog[11];
     d_pause();
     cout << str_dialog[12] << str_dialog[0];
+    cin.sync();
     getline(cin, key_str);
     cout << str_dialog[13];
     d_pause();
