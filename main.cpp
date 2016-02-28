@@ -76,7 +76,7 @@ const char str_help[][128]={
     "\t-B (--no-blocking) to keep this program from blocking",
     "\t-h (--help) for this help page.",
     "You may also call this program with no parameter to launch in dialog mode.",
-    "In dialog mode, you can NOT use any <key> or <data> with spaces."
+    "In dialog mode, you can NOT use any <key> or <data> with multiple lines."
 };
 const char str_dialog[][128]={
     "Input:",
@@ -162,12 +162,12 @@ again:
     cout << str_dialog[8] << str_dialog[select] << '!' << '\n';
     d_pause();
     cout << str_dialog[9] << str_dialog[select] << '?' << '\n' << str_dialog[0];
-    cin >> encrypted;
+    getline(cin, encrypted);
     decrypted=encrypted;
     cout << str_dialog[10] << str_dialog[select] << str_dialog[11];
     d_pause();
     cout << str_dialog[12] << str_dialog[0];
-    cin >> key_str;
+    getline(cin, key_str);
     cout << str_dialog[13];
     d_pause();
     cout << str_dialog[14];
